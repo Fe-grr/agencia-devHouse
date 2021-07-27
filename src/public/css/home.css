@@ -1,0 +1,94 @@
+body {
+    font-family: "Roboto";
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+  
+    align-items: center;
+  }
+  
+  .menu a {
+    color: #1e266d;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 22px;
+  }
+  
+  .atendimento a{
+      text-decoration: none;
+      color: #1e266d;
+  }
+
+  .atendimento button {
+    background-color: #1e266d;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .banner {
+    padding: 40px;
+    background-color: #f2f9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .banner h1 {
+    color: #1e266d;
+    font-size: 46px;
+  }
+
+  .banner p{
+      color: #3f3f6c;
+      margin-top: -12px;
+  }
+  .banner * {
+    margin-top: 10px;
+  }
+  
+  .button-padrao button {
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    margin-left: 20px;
+  }
+  #btnConhecer {
+      background-color: #0f59fc;
+      border-color: #0f59fc;
+      color: #fff;
+  }
+  .banner img{
+    display: none;
+}
+
+#menuHamburguer{
+    display: none;
+}
+
+  @media (min-width: 800px){
+      .banner img{
+          display: block;
+      }
+  }
+
+  @media (max-width: 465px){
+    .menu{
+        display:none
+    }
+
+    .atendimento{
+        display: none;
+    }  
+
+    #menuHamburguer{
+          display: block;
+      }
+  }

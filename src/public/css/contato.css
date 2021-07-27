@@ -1,0 +1,42 @@
+section{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center;*/
+    margin-top: 70px;
+    /* height: 50vh; */
+}
+
+small{
+    margin-top: 20px;
+}
+#formulario {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+  }
+
+
+.input-padrao{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #9d9b9b;
+    border-radius: 6px;
+    border-color: gray;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.ladoALado {
+    display: flex;
+    justify-content: first baseline;
+    gap: 10px;
+}
+
+section form button{
+    background-color: #0f59fc;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    /* margin-left: 10px; */
+}

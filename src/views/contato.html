@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contato.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <title>Contato | Agencia DevHouse</title>
+</head>
+<body>
+    <header>
+        <img
+          src="/img/logo.png"
+          alt="Agencia - devHouse"
+          title="Agencia - devHouse"
+          id="logo"
+        />
+
+        <img 
+        src="/img/menu-hamburguer.jpg" 
+        alt="Menu - Agencia devHouse"
+        title="Menu - Agencia devHouse"
+        id="menuHamburguer"
+      />
+
+        <nav class="menu">
+          <a href=""> Home </a>
+          <a href=""> Produtos </a>
+          <a href=""> Depoimentos </a>
+        </nav>
+        <div class="atendimento">
+          <a href="tel:+1140028922">(11) 4002-8922</a>
+          <button>Atendimento</button>
+        </div>
+      </header>
+      <section id="contato">
+        <div>  
+            <h1>Contato</h1>
+            <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit Non eos modi quae eveniet dolor rem velit fugit aspernatur.</small>
+        </div>
+
+          <form action="/receber-contato" method="POST" id="formulario">
+            <div class="ladoALado">
+                <input class="input-padrao" type="text" name="nome" placeholder="primeiro nome">
+                <input class="input-padrao" type="text" name="Sobrenome" placeholder="sobrenome">
+            </div>
+            
+            <input class="input-padrao" type="tel" name="telefone" placeholder="número de telefone">
+    
+            <select class="input-padrao" name="servico">
+                <option value="value" selected disabled>Selecione um serviço</option>
+                <option value="site">Site</option>
+                <option value="sistema">Sistema</option>
+                <option value="landPage">LandPage</option>
+                <option value="app">Aplicativo</option>
+            </select>
+            <div class="ladoALado">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar dados</button>
+            </div>
+        
+          </form>
+      </section>
+</body>
+</html>
