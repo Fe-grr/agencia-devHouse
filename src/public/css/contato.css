@@ -24,6 +24,7 @@ small{
     border-color: gray;
     margin-bottom: 20px;
     padding: 5px;
+    transition: border 0.02s;
 }
 
 .ladoALado {
@@ -39,4 +40,16 @@ section form button{
     padding: 10px;
     border: none;
     /* margin-left: 10px; */
+}
+
+.buttonPadrao[type="submit"]:hover{
+    background-color: green;
+}
+
+.buttonPadrao{
+    transition: background-color 0.3s;
+}
+.input-padrao:focus{
+    border: 3px solid greenyellow;
+    outline: 0;
 }

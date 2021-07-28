@@ -92,3 +92,13 @@ body {
           display: block;
       }
   }
+
+#chat{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+#chat:hover{
+  cursor: pointer;
+}
