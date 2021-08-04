@@ -9,6 +9,7 @@ section{
 small{
     margin-top: 20px;
 }
+
 #formulario {
     display: flex;
     flex-direction: column;
