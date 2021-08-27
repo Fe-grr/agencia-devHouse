@@ -2,10 +2,10 @@ const express = require('express')
 const routes = express.Router()
 const path = require('path')
 const depoimentos = require('../models/depoimentos.js')
+const indexController = require('../controllers/indexController')
 
-routes.get('/manutencao', (req, res) => {
-    res.sendFile(path.resolve('src/views', 'manutencao.html'))
-})
+
+routes.get('/manutencao', indexController.exibirManutencao)
 
 routes.get('/', (req, res) => {
     res.sendFile(path.resolve('src/views', 'home.html'));
@@ -31,5 +31,7 @@ routes.post('/receber-contato', (req, res) => {
 routes.get('/depoimentos', (req, res) => {
     res.render('depoimentos', { depoimentos, titulo: "Depoimentos" })
 })
+
+routes.post("/cadastrar-depoimento")
 
 module.exports = routes

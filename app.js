@@ -4,6 +4,7 @@ const app = express()
 const path = require('path')
 const rotasDeProdutos = require('./src/routes/produtos')
 const rotas = require('./src/routes')
+const { append } = require("vary");
 
 app.set('view engine', 'ejs')
 app.set('views', path.resolve("src/views"))

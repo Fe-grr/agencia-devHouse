@@ -10,6 +10,10 @@
 <body>
     <%- include('components/header') %>
     <main>
+        <form action="/cadastrarDepoimento" method="POST">
+            <label>Seu nome</label>
+            <input type="text" name="nome">
+        </form>
         <% 
             depoimentos.forEach(depoimento => { %>
                 <div>

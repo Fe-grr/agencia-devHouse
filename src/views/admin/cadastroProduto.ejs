@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Agencia DevHouse</title>
+</head>
+<body>
+    <%- include('../components/header') %>
+    <main>
+        <form action="/salvar-produto" enctype="multipart/form-data" method="POST">
+            <label for="">Nome do produto</label>
+            <input type="text" name="nome">
+            <label for="">Descrição do produto</label>
+            <textarea name="descricao" cols="30" rows="10"></textarea>
+            <label for="">Imagem do produto</label>
+            <input type="file" name="imagem">
+            <button type="submit">Finalizar cadastro</button>
+        </form>
+    </main>
+</body>
+</html>
